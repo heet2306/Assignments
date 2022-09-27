@@ -1,0 +1,189 @@
+name:-Heet
+module-6
+
+1.what are the advantages of bootstrap?
+=>
+-Easy to use: Anybody with just basic knowledge of HTML and CSS can start using Bootstrap
+-Responsive features: Bootstrap's responsive CSS adjusts to phones, tablets, and desktops
+-Mobile-first approach: In Bootstrap 3, mobile-first styles are part of the core framework
+-Browser compatibility: Bootstrap is compatible with all modern browsers (Chrome, Firefox, Internet Explorer, Edge, Safari, and Opera)
+
+2.what is a bootstrap container and how does it work?
+=>Containers are a fundamental building block of Bootstrap that contain, pad, and align your content within a given device or viewport.Containers are the most basic layout element in Bootstrap and are required when using our default grid system. Containers are used to contain, pad, and (sometimes) center the content within them. While containers can be nested, most layouts do not require a nested container.
+
+3.what are the default bootstrap text settings?
+=>Bootstrap 5 uses a default font-size of 1rem (16px by default), and its line-height is 1.5.
+In addition, all <p> elements have margin-top: 0 and margin-bottom: 1rem (16px by default).
+
+4.what do you know about the bootstrap grid system?
+=>Bootstrap's grid system uses a series of containers, rows, and columns to layout and align content. It's built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together.
+
+5.what is difference between bootstrap 4 and bootstrap 5?
+=>BASIS OF	        BOOTSTRAP 4				BOOTSTRAP 5
+Grid System	It has 5 tier (xs, sm, md, lg, xl).		It has 6 tier (xs, sm, md, lg, xl, xxl).
+
+Color		It has limited colors.			Extra colors added with the looks, A card 									improved color palette. there are various 									shades available to choose.
+
+Jquery	                    It has jquery and all related plugins.        	Jquery is removed and switched to vanilla JS 									with some working plugins
+
+Internet Explorer    Bootstrap 4 supports both IE 10 and 11.    	Bootstrap 5 doesn’t support IE 10 and 11.
+
+Form elements	Radio buttons, checkboxes have different           The look of form elements will not change, on    
+		look in different OS and browsers. The form        different OS or browser. The forms can be customized
+		uses whatever default browsers provide.          	and form controls can be added, they would not depend 						                    	on browser.
+
+Utilities API	We cannot modify utilities in bootstrap 4	Bootstrap 5 gave freedom to modify and also create 							our own utility
+
+Gutter		We use .glutter with fontsize in px		We use .g* with fontsize in rem
+
+Vertical Classes	Columns can be positioned relative		Columns cannot be positioned relative
+
+Bootstrap Icons	Bootstrap 4 doesn’t have its own SVG icons, 	Bootstrap 5 have its own SVG icons					we have to use font-awesome for icons.								
+Jumbotron	It supports.				It doesn’t support jumbotron.
+
+Card deck	The card deck is used to create an isset 	Card deck class in removed in bootstrap
+		of cards with equal width and height.
+
+Navbar		We have inline-block property and we will 	Inline-block property is removed and we will get black 
+ 		get white dropdown as default for  		dropdown as default for dropdown-menu-dark class.
+		dropdown-menu-dark class.	
+
+Static Site 	Bootstrap 4 uses Jekyll software.		Bootstrap 5 uses Hugo software as it is fast static 	Generator						site generator.
+
+flexbox grid	this makes easier to implement vertical               	advanced grid system is made available , also columns			designs, and the columns and rows can 	 don’t have relative positions.  
+		easily be implemented. the classes 
+		justify-center-content can directly be 
+		used to align according to the requirement	
+
+RTL Support	It does not enable RTL(Right to Left) switching.    It enables RTL(Right to Left) switching.	
+
+Offcanvas 	It does not support Offcanvas Component.	It supports Offcanvas Component(that is it is 		Component						available now).
+
+
+6.what is a button group and what is the class for a basic button group?
+=>“Button Groups” in Bootstrap is a class of name “btn-group” which is used to create series of buttons in groups (without spaces) vertically or horizontally. This is the basic syntax of the button group class where each button has its own class of “btn”.	
+
+7.how can you use bootstrap to make thumbnails?
+=>
+-Add an <a> tag with the class of .thumbnail around an image.
+-This adds four pixels of padding and a gray border.
+-On hover, an animated glow outlines the image.
+
+8.in bootstrap 4 what is flexbox?
+=>Flexbox. The biggest difference between Bootstrap 3 and Bootstrap 4 is that Bootstrap 4 now uses flexbox, instead of floats, to handle the layout. The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.
+
+9.how can one create an alert in bootstrap?
+=>Bootstrap provides an easy way to create predefined alert messages:
+
+×Success! This alert box indicates a successful or positive action.
+×Info! This alert box indicates a neutral informative change or action.
+×Warning! This alert box indicates a warning that might need attention.
+×Danger! This alert box indicates a dangerous or potentially negative action.
+
+Alerts are created with the .alert class, followed by one of the four contextual classes .alert-success, .alert-info, .alert-warning or .alert-danger:
+
+10.what is bootstrap card and how would you create one?
+=>A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you're familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails.
+
+example:-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Card</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Card Image</h2>
+  <div class="card" style="width:300px">
+        <img class="card-img-top" src="https://thumbs.dreamstime.com/b/flat-male-avatar-image-beard-hairstyle-businessman-profile-icon-vector-179285629.jpg" alt="Card image" style="width:100%">
+        <div class="card-body">
+            <h4 class="card-title">Alien Buddy </h4>
+            <p class="card-text"> Alien Buddy Is a Web Devloper</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+  </div>  
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Card</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Card Image</h2>
+  <div class="card" style="width:300px">
+        <img class="card-img-top" src="https://thumbs.dreamstime.com/b/flat-male-avatar-image-beard-hairstyle-businessman-profile-icon-vector-179285629.jpg" alt="Card image" style="width:100%">
+        <div class="card-body">
+            <h4 class="card-title">Alien Buddy </h4>
+            <p class="card-text"> Alien Buddy Is a Web Devloper</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+  </div>  
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Card</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Card Image</h2>
+  <div class="card" style="width:300px">
+        <img class="card-img-top" src="https://thumbs.dreamstime.com/b/flat-male-avatar-image-beard-hairstyle-businessman-profile-icon-vector-179285629.jpg" alt="Card image" style="width:100%">
+        <div class="card-body">
+            <h4 class="card-title">Alien Buddy </h4>
+            <p class="card-text"> Alien Buddy Is a Web Devloper</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+  </div>  
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Card</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Card Image</h2>
+  <div class="card" style="width:300px">
+        <img class="card-img-top" src="https://thumbs.dreamstime.com/b/flat-male-avatar-image-beard-hairstyle-businessman-profile-icon-vector-179285629.jpg" alt="Card image" style="width:100%">
+        <div class="card-body">
+            <h4 class="card-title">Alien Buddy </h4>
+            <p class="card-text"> Alien Buddy Is a Web Devloper</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+  </div>  
+</div>
+
+</body>
+</html>

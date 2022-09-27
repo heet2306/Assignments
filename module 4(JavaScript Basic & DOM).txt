@@ -1,0 +1,81 @@
+name:-Heet
+module-4
+
+1.what is javascript?
+=>JavaScript is the Programming Language for the Web.JavaScript can update and change both HTML and CSS.JavaScript can calculate, manipulate and validate data.
+
+2.what is the use of isnan function?
+=>The isNaN() function is used to check whether a given value is an illegal number or not. It returns true if value is a NaN else returns false. It is different from the Number.
+
+3.what is negative infinity?
+=>NEGATIVE_INFINITY is the same as the negative value of the global object's Infinity property. This value behaves slightly differently than mathematical infinity: Any positive value, including POSITIVE_INFINITY , multiplied by NEGATIVE_INFINITY is NEGATIVE_INFINITY.
+
+4.which company developed javascript?
+=>The first ever JavaScript was created by Brendan Eich at Netscape, and has since been updated to conform to ECMA-262 Edition 5 and later versions.
+
+5.what are undeclared and undefined variables?
+=>Undefined variable means a variable has been declared but it does not have a value. Undeclared variable means that the variable does not exist in the program at all.
+
+6.write a code for adding new elements dynamically?
+=>
+<html> 
+<head> 
+<title>t1</title> 
+<script type="text/javascript"> 
+	function addNode() 
+     {var newP = document.createElement("p"); 
+	  var textNode = document.createTextNode(" This is a new text node"); 
+	  newP.appendChild(textNode);
+      document.getElementById("firstP").appendChild(newP); } 
+</script> </head> 
+<body> <p id="firstP">firstP<p> </body> 
+</html>
+
+7.what is the difference between viewstate and sessionstate?
+=>The basic difference between these two is that the ViewState is to manage state at the client's end, making state management easy for end-user while SessionState manages state at the server's end, making it easy to manage content from this end too. ViewState: It is maintained at only one level that is page-level.
+
+8.what is === operator in javascript?
+=>The strict equality operator ( === ) checks whether its two operands are equal, returning a Boolean result. Unlike the equality operator, the strict equality operator always considers operands of different types to be different.
+
+9.how can the style/class of an element be changed?
+=>Element Class Names
+Another way to alter the style of an element is by changing its class attribute. class is a reserved word in JavaScript, so in order to access the element's class, you use element. className .
+
+10.how to read and write a file using javascript?
+=>There are two ways to do it:
+1. Using JavaScript extensions (runs from JavaScript Editor), or
+2. Using a web page and ActiveX objects (Internet Explorer only)
+In JavaScript Extensions, you can use
+fh = fopen(getScriptPath(), 0); to open a file Using ActiveX objects, following should be included in your code to read a file:
+var fso = new ActiveXObject("Scripting.FileSystemObject");
+var s = fso.OpenTextFile("C:\\example.txt", 1, true);
+
+11.what are all the looping structures in javascript?
+=>for - loops through a block of code a number of times
+for/in - loops through the properties of an object
+for/of - loops through the values of an iterable object
+while - loops through a block of code while a specified condition is true
+do/while - also loops through a block of code while a specified condition is true.
+
+12.how can you convert the string of any base to an integer in javascript?
+=>In JavaScript parseInt() function (or a method) is used to convert the passed in string parameter or value to an integer value itself. This function returns an integer of base which is specified in second argument of parseInt() function.
+
+13.what is the function of delete operator in javascript?
+=>The delete operator removes a given property from an object. On successful deletion, it will return true , else false will be returned.
+
+14.what are all the types of popup boxes available in javascript?
+=>JavaScript has three kind of popup boxes: Alert box, Confirm box, and Prompt box.
+
+15.what is the use of void(0) ?
+=>JavaScript void 0 means returning undefined (void) as a primitive value. You might come across the term “JavaScript:void(0)” while going through HTML documents. It is used to prevent any side effects caused while inserting an expression in a web page.
+
+16.how can a page be forced to load another page in javascript?
+=>Approach: We can use window. location property inside the script tag to forcefully load another page in Javascript. It is a reference to a Location object that is it represents the current location of the document. We can change the URL of a window by accessing it.
+
+17.what are the disadvantages of using innerhtml in javascript?
+=>
+-Event handlers attached to any DOM element are preserved.
+-Replacement is done everywhere.
+-It is not possible to append innerHTML.
+-Breaks the document.
+-Used for Cross-site Scripting.
